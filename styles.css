@@ -11,6 +11,14 @@ body {
     align-items: center;
     text-align: center;
 }
+
+div {
+font-weight: lighter;
+height: 100px;
+margin:15px 0 15px;
+
+}
+
 .sedan-container {
     background-color: hsl(31, 77%, 52%);
     color: hsl(31, 77%, 52%);
@@ -32,3 +40,24 @@ body {
     padding: 2em 4em 2em 4em;;
 }
 
+.sedan-container div {
+    color: white;
+font-weight:lighter;
+height: 100px;
+margin:15px 0 15px;
+
+}
+
+.container-suvs div {
+    color: white;
+    font-weight:lighter;
+    height: 100px;
+    margin:15px 0 15px;
+}
+
+.container-luxury div {
+    color: white;
+    font-weight:lighter;
+    height: 100px;
+    margin:15px 0 15px;
+}
