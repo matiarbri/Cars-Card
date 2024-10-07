@@ -12,10 +12,32 @@ body {
     text-align: center;
 }
 
+button {
+    background-color: white;
+    color: inherit;
+    border-radius: 25px;
+    border: none;
+    text-decoration: none;
+    margin-top: 15px;
+    width: 200px;
+    font-family: "Lexend Deca", sans-serif;
+
+}
+
+button:hover {
+    transition: .23s;
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    color: white;
+}
+
 div {
-font-weight: lighter;
-height: 100px;
-margin:15px 0 15px;
+    font-weight: lighter;
+    height: 100px;
+    margin: 15px 0 15px;
 
 }
 
@@ -23,7 +45,8 @@ margin:15px 0 15px;
     background-color: hsl(31, 77%, 52%);
     color: hsl(31, 77%, 52%);
     height: auto;
-    padding: 2em 4em 2em 4em;;
+    padding: 2em 4em 2em 4em;
+    ;
 }
 
 .container-suvs {
@@ -37,27 +60,55 @@ margin:15px 0 15px;
     background-color: hsl(179, 100%, 13%);
     color: hsl(179, 100%, 13%);
     height: auto;
-    padding: 2em 4em 2em 4em;;
+    padding: 2em 4em 2em 4em;
+    ;
 }
 
 .sedan-container div {
     color: white;
-font-weight:lighter;
-height: 100px;
-margin:15px 0 15px;
+    font-weight: lighter;
+    height: 100px;
+    margin: 15px 0 15px;
 
 }
 
 .container-suvs div {
     color: white;
-    font-weight:lighter;
+    font-weight: lighter;
     height: 100px;
-    margin:15px 0 15px;
+    margin: 15px 0 15px;
 }
 
 .container-luxury div {
     color: white;
-    font-weight:lighter;
+    font-weight: lighter;
     height: 100px;
-    margin:15px 0 15px;
+    margin: 15px 0 15px;
+}
+
+/* Used https://www.w3schools.com/css/css_rwd_mediaqueries.asp https://developer.mozilla.org/es/docs/Web/CSS/CSS_media_queries/Using_media_queries  as source for media query feature */
+
+@media (max-width: 600px) {
+
+    .sedan-container {
+        margin-right: 20px !important;
+        margin-left: 20px !important;
+
+    }
+
+    .container-suvs {
+        margin-right: 20px !important;
+        margin-left: 20px !important;
+    }
+
+    .container-luxury {
+        margin-right: 20px !important;
+        margin-left: 20px !important;
+    }
+
+    body {
+        display: unset;
+        padding: 0;
+    }
+
 }
