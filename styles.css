@@ -1,27 +1,28 @@
+:root{
+    --sedan-color: hsl(31, 77%, 52%);
+    --suvs-color: hsl(184, 100%, 22%);
+    --luxury-color: hsl(179, 100%, 13%);
+}
+
 body {
     color: white;
     font-family: "Lexend Deca", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
     height: 100vh;
-    padding: 2em 2em;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    font-size: 15px;
+    padding: 0 40%;
 }
 
 button {
     background-color: white;
-    color: inherit;
+    color: black;
     border-radius: 25px;
     border: none;
-    text-decoration: none;
     margin-top: 15px;
-    width: 200px;
-    font-family: "Lexend Deca", sans-serif;
-
+    width: 150px;
+    padding: 1em;
 }
 
 button:hover {
@@ -30,65 +31,32 @@ button:hover {
     color: white;
 }
 
-h1 {
-    color: white;
+.container{
+    height: auto;
+    padding: 2em 4em 2em 4em;
 }
 
-div {
+.container p{
     font-weight: lighter;
-    height: 100px;
+    height: 120px;
     margin: 15px 0 15px;
-
+    margin: 2em 0 5em;
 }
 
 .sedan-container {
-    background-color: hsl(31, 77%, 52%);
-    color: hsl(31, 77%, 52%);
-    height: auto;
-    padding: 2em 4em 2em 4em;
-    ;
+    background-color: var(--sedan-color);
 }
 
 .container-suvs {
-    background-color: hsl(184, 100%, 22%);
-    color: hsl(184, 100%, 22%);
-    height: auto;
-    padding: 2em 4em 2em 4em;
+    background-color: var(--suvs-color);
 }
 
 .container-luxury {
-    background-color: hsl(179, 100%, 13%);
-    color: hsl(179, 100%, 13%);
-    height: auto;
-    padding: 2em 4em 2em 4em;
-    ;
+    background-color: var(--luxury-color);
 }
 
-.sedan-container div {
-    color: white;
-    font-weight: lighter;
-    height: 100px;
-    margin: 15px 0 15px;
 
-}
-
-.container-suvs div {
-    color: white;
-    font-weight: lighter;
-    height: 100px;
-    margin: 15px 0 15px;
-}
-
-.container-luxury div {
-    color: white;
-    font-weight: lighter;
-    height: 100px;
-    margin: 15px 0 15px;
-}
-
-/* Used https://www.w3schools.com/css/css_rwd_mediaqueries.asp https://developer.mozilla.org/es/docs/Web/CSS/CSS_media_queries/Using_media_queries  as source for media query feature */
-
-@media (max-width: 600px) {
+@media only screen and (max-width: 793px) {
 
     .sedan-container {
         margin-right: 20px !important;
